@@ -101,7 +101,7 @@ GEMINI_API_KEY
 
 Deploy
 
-Live web link:
+Live web link: https://aipoweredtestscenariotestcasegenerator-benf5uqkbhxyefj5pn5xbs.streamlit.app/
 
 📸 Screenshots
 

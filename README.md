@@ -117,14 +117,6 @@ utils folder
 
 config.py
 
-Add environment variable
-GEMINI_API_KEY
-
-🔑 Environment Variables
-
-GEMINI_API_KEY – Your Gemini API key
-GEMINI_MODEL – default: models/gemini-2.5-flash
-
 Deploy
 
 Live web link:

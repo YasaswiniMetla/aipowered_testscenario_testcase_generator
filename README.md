@@ -1,96 +1,70 @@
-🧪 AI-Powered Testcase & Scenario Generator
+🧪 AI-Powered Test Scenario & Testcase Generator
 
-Generate high-quality QA scenarios and full testcases with Google Gemini 2.5
+Generate high-quality QA scenarios and detailed testcases using Google Gemini 2.5 — powered by Streamlit.
 
 🚀 Overview
 
-The AI Testcase & Scenario Generator is a modern Streamlit-based application that uses Google Gemini 2.5 Flash to generate:
+This project is an intelligent QA assistant that automatically generates:
 
-✔ High-quality QA test scenarios
-✔ Detailed testcases (steps + expected results)
-✔ Editable scenarios
-✔ AI-powered “Improve Scenario” button
-✔ JSON / CSV / Markdown / ZIP export options
-✔ Functional coverage metrics
-✔ Clean premium UI
+Professional test scenarios
 
-This tool helps QA engineers, developers, and SDETs generate comprehensive testcases in seconds.
+Detailed testcases (steps + expected results)
+
+Editable scenario inputs
+
+AI-powered “Improve Scenario” rewriting
+
+Multiple export formats (JSON, CSV, Markdown, ZIP)
+
+A modern Streamlit user interface
+
+It helps QA engineers, testers, and developers speed up testcase creation with accurate, structured outputs.
 
 ✨ Features
 
-🧠 AI-Generated Content
+🧠 AI Generation
 
-Generate test scenarios from feature descriptions
+Generate test scenarios from requirements
 
-Generate full structured testcases
+Convert scenarios into full testcases
 
-Improve scenarios instantly using AI
+Improve poorly written scenarios
 
-✍️ Scenario Editor
+🎨 Modern UI
 
-Modify scenarios
+Clean dark theme
 
-Auto-update session
+Editable scenario blocks
 
-One-click improve and revert options
+Real-time generation
 
-🎨 Premium UI (Glassmorphism)
+Step-by-step testcase viewer
 
-Beautiful dark UI
+📦 Export
 
-Gradient buttons
+Export as JSON
 
-Smooth cards, tabs, metrics
+Export as CSV
 
-Modern two-column layout
+Export as Markdown
 
-📄 Testcase Viewer
+Export all formats as ZIP
 
-JSON View
+🛠 Architecture
 
-Markdown View
-
-Steps Card View
-
-📊 Functional Coverage Dashboard
-
-Total testcases
-
-Total steps
-
-Coverage score
-
-Average complexity
-
-📦 Export Options
-
-JSON
-
-CSV
-
-Markdown
-
-Full ZIP bundle
-
-🔧 Tech Stack
-
-Python 3.10+
+Python 3.11+
 
 Streamlit
 
-Google Gemini 2.5 Flash API
+Gemini 2.5 API
 
-Pandas / NumPy
+Modular utils: validations, prompts
 
-Custom CSS (Glass UI)
-
-Render / Streamlit Cloud deployment ready
+🔧 Installation (Local)
 
 Clone the repository
 git clone https://github.com/
 <your-username>/AI-Testcase-Generator.git
-
-Navigate to the folder
 cd AI-Testcase-Generator
 
 Create virtual environment
@@ -101,26 +75,55 @@ source venv/bin/activate (Mac/Linux)
 Install dependencies
 pip install -r requirements.txt
 
-Create your .env file in root
-GEMINI_API_KEY=your_key_here
+Create .env file
+GEMINI_API_KEY=your_api_key
+GEMINI_MODEL=models/gemini-2.5-flash
 
 Run the app
 streamlit run app/streamlit_app.py
 
-🌐 Deploy on Render
+🌐 Deployment
+🟩 Deploy on Streamlit Cloud (Recommended & Free)
 
-Push your project to GitHub
+Push project to GitHub
 
-Login to https://render.com
+Go to https://share.streamlit.io
 
-Create New → Web Service
+Click “New App”
 
 Select your repo
 
-Render auto-loads render.yaml
+Set main file path:
+app/streamlit_app.py
+
+Add environment variable:
+GEMINI_API_KEY
+
+Deploy
+
+🟪 Deploy on HuggingFace Spaces (Free)
+
+Create a new Space
+
+Choose SDK → Streamlit
+
+Upload:
+
+app/streamlit_app.py (or rename to app.py)
+
+requirements.txt
+
+utils folder
+
+config.py
 
 Add environment variable
-GEMINI_API_KEY=your_key
+GEMINI_API_KEY
+
+🔑 Environment Variables
+
+GEMINI_API_KEY – Your Gemini API key
+GEMINI_MODEL – default: models/gemini-2.5-flash
 
 Deploy
 
@@ -165,4 +168,4 @@ ZIP Bundle — entire set packaged together
 
 📜 License
 
-MIT License © 2025 Your Name
+MIT License © 2025 SAI YASASWINI METLA

@@ -51,3 +51,5 @@ outputs/
 # Other
 .env.local
 .env.*.local
+
+*.mp4

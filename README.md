@@ -86,37 +86,6 @@ Custom CSS (Glass UI)
 
 Render / Streamlit Cloud deployment ready
 
-📁 Project Structure
-
-AIPowered_TestScenario_TestCase_Generator
-│
-├── app/
-│ ├── streamlit_app.py
-│ ├── gemini_generator.py
-│ ├── json_cleanup.py
-│ ├── export_testcases.py
-│ ├── config.py
-│ └── utils/
-│ ├── validations.py
-│ └── prompts.py
-│
-├── outputs/
-│ └── exports/
-│
-├── samples/
-│ ├── context_auth.txt
-│ ├── context_payment.txt
-│ └── context_inventory.txt
-│
-├── .env.example
-├── Procfile
-├── render.yaml
-├── requirements.txt
-├── README.md
-└── setup.sh
-
-⚙️ Installation (Local)
-
 Clone the repository
 git clone https://github.com/
 <your-username>/AI-Testcase-Generator.git

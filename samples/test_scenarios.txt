@@ -1,0 +1,15 @@
+1. Verify user can successfully register with valid email and password
+2. Verify error message displays for registration with invalid email format
+3. Verify error message displays for password not meeting complexity requirements
+4. Verify successful login with correct credentials
+5. Verify error message for login with incorrect password
+6. Verify error message for login with non-existent email
+7. Verify account locks after 3 consecutive failed login attempts
+8. Verify locked account displays appropriate lockout message
+9. Verify locked account automatically unlocks after 30 minutes
+10. Verify password reset email is sent when requested
+11. Verify password reset link expires after 1 hour
+12. Verify session expires after 30 minutes of inactivity
+13. Verify rate limiting prevents more than 5 login attempts per minute
+14. Verify 2FA setup and verification process
+15. Verify user can successfully login with 2FA enabled

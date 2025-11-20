@@ -1,0 +1,39 @@
+Feature: Inventory Management System
+
+Description:
+The system provides real-time inventory tracking for products across warehouses. It supports stock adjustments, low-stock alerts, automatic reordering, and synchronization with the order management and supplier systems. All updates must be atomic to prevent inconsistencies caused by simultaneous operations.
+
+Business Rules:
+- Every product must have a unique SKU.
+- Stock quantity must always remain ≥ 0.
+- Low-stock threshold is configurable per product.
+- Inventory updates must be logged with timestamp, user, and action reason.
+- Automatic reorder is triggered when stock falls below threshold.
+- Reorder quantity is calculated based on 30-day sales average.
+- Stock transfers between warehouses require approval when quantity > 50 units.
+- Product availability in UI must reflect real-time stock after every update.
+- A product cannot be marked “Out of Stock” if reorder is pending.
+
+Acceptance Criteria:
+- AC1: Users can update stock quantities manually.
+- AC2: System shows accurate live inventory across all warehouses.
+- AC3: Low-stock alerts must appear within 5 seconds of threshold breach.
+- AC4: Automatic reorder requests are generated correctly.
+- AC5: Stock cannot drop below zero regardless of API load.
+- AC6: Stock transfer approval workflow functions correctly.
+- AC7: Inventory logs display full action history.
+- AC8: Product UI reflects updates within 3 seconds.
+
+Technical Notes:
+- Backend: Node.js microservices
+- Database: MongoDB + Redis for caching
+- Real-time updates powered by WebSockets
+- Integration with Supplier API for purchase orders
+- CRON job for nightly reconciliation
+- Write operations use optimistic concurrency (versioning)
+
+User Stories:
+- As an operations manager, I want to update stock levels immediately when products arrive.
+- As a warehouse staff member, I want alerts when stock reaches low levels.
+- As a business owner, I want automatic reorders so items never go out of stock.
+- As an admin, I want to approve large stock transfers.

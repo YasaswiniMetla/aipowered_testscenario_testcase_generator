@@ -101,24 +101,6 @@ GEMINI_API_KEY
 
 Deploy
 
-🟪 Deploy on HuggingFace Spaces (Free)
-
-Create a new Space
-
-Choose SDK → Streamlit
-
-Upload:
-
-app/streamlit_app.py (or rename to app.py)
-
-requirements.txt
-
-utils folder
-
-config.py
-
-Deploy
-
 Live web link:
 
 📸 Screenshots

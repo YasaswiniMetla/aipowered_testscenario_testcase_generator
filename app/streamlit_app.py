@@ -1,5 +1,5 @@
 # --------------------------
-# Premium Streamlit UI for AI Testcase Generator (Final Clean Version)
+#  Streamlit UI for AI Testcase Generator 
 # --------------------------
 
 import streamlit as st
@@ -32,7 +32,7 @@ logger.setLevel(logging.INFO)
 
 
 # -----------------------------------------------------------------------------
-# Custom Premium CSS – Glassmorphism, Gradients, Modern UI
+#  CSS – Glassmorphism, Gradients, Modern UI
 # -----------------------------------------------------------------------------
 
 st.markdown("""
@@ -198,7 +198,7 @@ Return ONLY JSON.
 
 
 # -----------------------------------------------------------------------------
-# Sidebar – Clean Version
+# Sidebar – Version
 # -----------------------------------------------------------------------------
 
 st.sidebar.title("⚙️ Configuration")
